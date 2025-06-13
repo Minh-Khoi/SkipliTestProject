@@ -4,15 +4,41 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+        
+        {
+            "name": "PredictBlackBox.py",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "Python/PredictBlackBox.py",
+            "console": "integratedTerminal",
+            "args": "${command:pickArgs}"
+        },
+        {
+            "name": "PredictChatGPT.py",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "Python/PredictChatGPT.py",
+            "console": "integratedTerminal",
+            "args": "${command:pickArgs}"
+        },
+        {
+            "name": "PredictGemini.py",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "Python/PredictGemini.py",
+            "console": "integratedTerminal",
+            "args": "${command:pickArgs}"
+        },
         {
             "type": "node",
             "request": "launch",
             "name": "Launch Express TS",
             "program": "${workspaceFolder}/expressapp/src/app.ts",
             "preLaunchTask": "tsc: build - expressapp/tsconfig.json",
-            "outFiles": ["${workspaceFolder}/expressapp/dist/**/*.js"]
+            "outFiles": [
+                "${workspaceFolder}/expressapp/dist/**/*.js"
+            ]
         },
-        
         {
             "type": "firefox",
             "request": "launch",
@@ -21,7 +47,7 @@
             "webRoot": "${workspaceFolder}/reactapp",
             "sourceMapPathOverrides": {
                 "webpack:///src/*": "${webRoot}/*"
-              }
+            }
         }
     ]
 }
