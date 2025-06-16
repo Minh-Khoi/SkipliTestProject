@@ -10,6 +10,7 @@
 !.gitignore
 !README.md
 !Python\requirments.txt
+!installServices.bat
 !installServices
 !.Dockerfile
 !docker-compose.yml
