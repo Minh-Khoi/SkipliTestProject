@@ -1,0 +1,15 @@
+*
+
+!*.ts
+!*.json
+!*.txt
+!*.tsx
+!*.py
+!*.ipynb
+
+!.gitignore
+!README.md
+!Python\requirments.txt
+!installServices
+!.Dockerfile
+!docker-compose.yml

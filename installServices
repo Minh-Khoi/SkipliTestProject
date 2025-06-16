@@ -1,0 +1,13 @@
+cd expressapp
+npm install
+cd ..
+
+cd reactapp
+npm install
+cd ..
+
+cd Python
+pip -m venv venv
+source venv/bin/activate
+pip install -r requirments.txt
+cd ..
